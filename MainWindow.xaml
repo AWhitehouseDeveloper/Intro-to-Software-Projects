@@ -5,8 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Planner"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" WindowState="Maximized">
 
-    </Grid>
+    <StackPanel>
+        <!--button to go the previous month-->
+        <Button Height="50" Width="50" Content="&lt;" >
+            
+        </Button>
+        <!--Month the calendar is on-->
+        <TextBlock Height="150" Width="300" FontSize="50" FontFamily="PetitFormalScript-Regular.ttf" TextAlignment="center">
+            September
+        </TextBlock>
+        <!--button to go to next month-->
+        <Button Height="50" Width="50" Content="&gt;">
+            
+        </Button>
+        <!--Add event button-->    
+        <Button>
+            Add Event
+        </Button>
+    </StackPanel>
 </Window>

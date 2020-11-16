@@ -6,4 +6,12 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="PetitFormalScript-Regular.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="PetitFormalScript-Regular.ttf" />
+  </ItemGroup>
+
 </Project>
