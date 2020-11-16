@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Reflection;
 
 namespace Planner
 {
@@ -23,6 +24,10 @@ namespace Planner
         public MainWindow()
         {
             InitializeComponent();
+            Type t = typeof(System.Data.DataSet);
+            string s = t.Assembly.FullName.ToString();
+            Console.WriteLine("The fully qualified assembly name " +
+                "containing the specified class is {0}.", s);
         }
     }
 }
