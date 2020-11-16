@@ -25,4 +25,14 @@ namespace Planner
             InitializeComponent();
         }
     }
+
+    public class Event()
+    {
+        public string Name{get; set;}
+        public DateTime StartOfEvent {get; set;}
+        public DateTime EndOfEvent {get; set;}
+        public string Description {get; set;}
+        public Color Color {get; set;}
+        
+    }
 }
