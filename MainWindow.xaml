@@ -13,7 +13,7 @@
             
         </Button>
         <!--Month the calendar is on-->
-        <TextBlock Height="150" Width="300" FontSize="50" FontFamily="ms-appx::///System.Data.Common, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a/Planner/PetitFormalScript-Regular.ttf" TextAlignment="center">
+        <TextBlock Height="150" Width="300" FontSize="50" FontFamily="Resources/PetitFormalScript-Regular.ttf #Petit Formal Script, Segoe Script" TextAlignment="center">
             September
         </TextBlock>
         <!--button to go to next month-->
