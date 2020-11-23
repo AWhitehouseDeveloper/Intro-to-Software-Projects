@@ -5,12 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Planner"
         mc:Ignorable="d"
-        Title="MainWindow" WindowState="Maximized">
+        Title="Planner" WindowState="Maximized">
 
     <StackPanel>
         <DockPanel>
             <!--button to go the previous month-->
-            <Button Height="50" Width="50" Content="&lt;" Click="prevMonth_Click" >
+            <Button Height="50" Width="50" Content="&lt;" Click="prevMonth_Click" 
+                    Background="AliceBlue"  BorderBrush="CadetBlue" FontWeight="Bold">
 
             </Button>
             <!--Month the calendar is on-->
@@ -20,11 +21,13 @@
                 September
             </TextBlock>
             <!--button to go to next month-->
-            <Button Height="50" Width="50" Content="&gt;" Click="NextMonth_Click">
+            <Button Height="50" Width="50" Content="&gt;" Click="NextMonth_Click"
+                    Background="AliceBlue" BorderBrush="CadetBlue" FontWeight="Bold">
 
             </Button>
             <!--Add event button-->
-            <Button Click="AddEvent_Click" >
+            <Button Click="AddEvent_Click" Background="AliceBlue"  
+                    BorderBrush="CadetBlue" Margin="7">
                 Add Event
             </Button>
         </DockPanel>
