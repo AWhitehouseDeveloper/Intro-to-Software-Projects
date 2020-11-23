@@ -9,19 +9,19 @@
 
     <StackPanel>
         <!--button to go the previous month-->
-        <Button Height="50" Width="50" Content="&lt;" >
+        <Button Height="50" Width="50" Content="&lt;" Click="prevMonth_Click" >
             
         </Button>
         <!--Month the calendar is on-->
-        <TextBlock Height="150" Width="300" FontSize="50" FontFamily="Resources/PetitFormalScript-Regular.ttf #Petit Formal Script, Segoe Script" TextAlignment="center">
+        <TextBlock Name="MonthDisplay" Height="150" Width="300" FontSize="50" FontFamily="Resources/PetitFormalScript-Regular.ttf #Petit Formal Script, Segoe Script" TextAlignment="center">
             September
         </TextBlock>
         <!--button to go to next month-->
-        <Button Height="50" Width="50" Content="&gt;">
+        <Button Height="50" Width="50" Content="&gt;" Click="NextMonth_Click">
             
         </Button>
         <!--Add event button-->    
-        <Button>
+        <Button Click="AddEvent_Click" >
             Add Event
         </Button>
     </StackPanel>
