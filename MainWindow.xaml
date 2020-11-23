@@ -5,31 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Planner"
         mc:Ignorable="d"
-        Title="MainWindow" WindowState="Maximized">
+        Title="MainWindow" Width="800" Height="600">
 
     <StackPanel>
         <DockPanel>
             <!--button to go the previous month-->
-            <Button Height="50" Width="50" Content="&lt;" Click="prevMonth_Click" 
-                    Background="AliceBlue" BorderBrush="CadetBlue" FontWeight="Bold">
-
-            </Button>
+            <Button Height="50" Width="50" Margin="50, 30, 0, 0" Content="&lt;" 
+                    HorizontalAlignment="Center" VerticalAlignment="Top" 
+                    FontWeight="ExtraBlack" Click="prevMonth_Click"/>
             <!--Month the calendar is on-->
-            <TextBlock Name="MonthDisplay" Height="65" Width="300" FontSize="50" 
-                       FontFamily="Resources/PetitFormalScript-Regular.ttf #Petit Formal Script, Segoe Script" 
-                       TextAlignment="center">
+            <TextBlock Name="MonthDisplay" Height="70" Width="344" Margin="0, 20, 0, 0" 
+                       FontSize="50" FontFamily="Resources/PetitFormalScript-Regular.ttf #Petit Formal Script, Segoe Script" 
+                       TextAlignment="center" HorizontalAlignment="Center" 
+                       VerticalAlignment="Top">
                 September
             </TextBlock>
             <!--button to go to next month-->
-            <Button Height="50" Width="50" Content="&gt;" Click="NextMonth_Click"
-                    Background="AliceBlue" BorderBrush="CadetBlue" FontWeight="Bold">
-
-            </Button>
+            <Button Height="50" Width="50" Margin="0, 30, 0, 0" Content="&gt;" 
+                    HorizontalAlignment="Center" VerticalAlignment="Top" 
+                    FontWeight="ExtraBlack" Click="NextMonth_Click"/>
             <!--Add event button-->
-            <Button Click="AddEvent_Click" Background="AliceBlue" BorderBrush="CadetBlue" 
-                    Margin="7">
-                Add Event
-            </Button>
+            <Button Content="Add Event" Width="100" Height="50" Margin="0, 30, 0, 50" 
+                    HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20" 
+                    Click="AddEvent_Click"/>
         </DockPanel>
     </StackPanel>
 </Window>
