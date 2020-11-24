@@ -17,31 +17,46 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="600"/>
             </Grid.RowDefinitions>
-            <DockPanel>
-                <!--button to go the previous month-->
-                <Button Height="50" Width="50" Margin="50, 30, 0, 0" Content="&lt;" 
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"/>
+                </Grid.RowDefinitions>
+            </Grid>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <DockPanel>
+                    <!--button to go the previous month-->
+                    <Button Height="50" Width="50" Margin="50, 30, 0, 0" Content="&lt;" 
                         HorizontalAlignment="Center" VerticalAlignment="Top" 
                         FontWeight="ExtraBlack" Click="prevMonth_Click"/>
-                <!--Month the calendar is on-->
-                <TextBlock Name="MonthDisplay" Height="70" Width="380" Margin="25, 20, 0, 0" 
+                    <!--Month the calendar is on-->
+                    <TextBlock Name="MonthDisplay" Height="70" Width="380" Margin="25, 20, 0, 0" 
                            FontSize="50" FontFamily="Resources/PetitFormalScript-Regular.ttf #Petit Formal Script, Segoe Script" 
                            TextAlignment="center" HorizontalAlignment="Center" 
                            VerticalAlignment="Top">
                     September
-                </TextBlock>
-                <!--button to go to next month-->
-                <Button Height="50" Width="50" Margin="0, 30, 0, 0" Content="&gt;" 
+                    </TextBlock>
+                    <!--button to go to next month-->
+                    <Button Height="50" Width="50" Margin="0, 30, 0, 0" Content="&gt;" 
                         HorizontalAlignment="Center" VerticalAlignment="Top" 
                         FontWeight="ExtraBlack" Click="NextMonth_Click"/>
-                <!--Add event button-->
-            </DockPanel>
+                    <!--Add event button-->
+                </DockPanel>
+            </Grid>
+        </Grid>
+            
             <DockPanel>
                 <Button Content="Add Event" Width="100" Height="50" Margin="0, 30, 0, 50" 
                         HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20" 
                         Click="AddEvent_Click"/>
             </DockPanel>
-                
-            
-        </Grid>
+              
     </StackPanel>
 </Window>
