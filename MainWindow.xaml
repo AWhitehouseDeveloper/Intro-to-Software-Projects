@@ -43,9 +43,10 @@
             
             <Grid Grid.Row="0" Grid.Column="1">
                 <DockPanel>
-                    <Button Content="Add Event" Width="100" Height="50"
+                    <Button Content="Add Event" Width="200" Height="50"
                         HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20" 
-                        Click="AddEvent_Click"/>
+                        Click="AddEvent_Click" Background="#8CE6FF"
+                        FontFamily="Resources/PetitFormalScript-Regular.ttf #Petit Formal Script, Segoe Script"/>
                 </DockPanel>
             </Grid>
 
