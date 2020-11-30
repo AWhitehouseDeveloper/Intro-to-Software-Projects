@@ -12,25 +12,14 @@
             <!--Setting up the grid to help with the calendar-->
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="600"/>
-                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="200"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="600"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="500"/>
             </Grid.RowDefinitions>
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="100"/>
-                </Grid.RowDefinitions>
-            </Grid>
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
+
+            <Grid Grid.RowSpan="1" Grid.ColumnSpan="1">
                 <DockPanel Background="Lavender">
                     <!--button to go the previous month-->
                     <Button Height="50" Width="50" Margin="50, 30, 0, 0" Content="&lt;" 
@@ -52,13 +41,40 @@
                     <!--Add event button-->
                 </DockPanel>
             </Grid>
-        </Grid>
             
-            <DockPanel>
-                <Button Content="Add Event" Width="100" Height="50" Margin="0, 30, 0, 50" 
+            <Grid Grid.Row="0" Grid.Column="1">
+                <DockPanel>
+                    <Button Content="Add Event" Width="100" Height="50" Margin="0, 30, 0, 50" 
                         HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20" 
                         Click="AddEvent_Click"/>
-            </DockPanel>
-              
+                </DockPanel>
+            </Grid>
+
+            <Grid Grid.RowSpan="1" Grid.Row="1" Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid>
+                    <!--This is where the days will go-->
+                    
+                </Grid>
+                
+            </Grid>
+
+        </Grid>
     </StackPanel>
 </Window>
