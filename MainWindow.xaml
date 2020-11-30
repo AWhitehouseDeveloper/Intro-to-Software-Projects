@@ -8,7 +8,7 @@
         Title="MainWindow" Width="800" Height="600">
 
     <StackPanel>
-        <Grid>
+        <Grid Background="#E4FFFF">
             <!--Setting up the grid to help with the calendar-->
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="600"/>
@@ -20,12 +20,12 @@
             </Grid.RowDefinitions>
 
             <Grid Grid.RowSpan="1" Grid.ColumnSpan="1">
-                <DockPanel Background="Lavender">
+                <DockPanel Background="#FFC6D9">
                     <!--button to go the previous month-->
                     <Button Height="50" Width="50" Margin="50, 30, 0, 0" Content="&lt;" 
                         HorizontalAlignment="Center" VerticalAlignment="Top" 
                         FontWeight="ExtraBlack" Click="prevMonth_Click"
-                            Background="LavenderBlush" BorderBrush="HotPink"/>
+                            Background="#E4FFFF" BorderBrush="#008CFF"/>
                     <!--Month the calendar is on-->
                     <TextBlock Name="MonthDisplay" Height="70" Width="380" Margin="25, 20, 0, 0" 
                            FontSize="50" FontFamily="Resources/PetitFormalScript-Regular.ttf #Petit Formal Script, Segoe Script" 
@@ -37,20 +37,20 @@
                     <Button Height="50" Width="50" Margin="0, 30, 0, 0" Content="&gt;" 
                         HorizontalAlignment="Center" VerticalAlignment="Top" 
                         FontWeight="ExtraBlack" Click="NextMonth_Click"
-                        Background="LavenderBlush" BorderBrush="HotPink"/>
+                        Background="#E4FFFF" BorderBrush="#008CFF"/>
                     <!--Add event button-->
                 </DockPanel>
             </Grid>
             
             <Grid Grid.Row="0" Grid.Column="1">
                 <DockPanel>
-                    <Button Content="Add Event" Width="100" Height="50" Margin="0, 30, 0, 50" 
+                    <Button Content="Add Event" Width="100" Height="50" Margin="0, 30, 0, 40" 
                         HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20" 
-                        Click="AddEvent_Click"/>
+                        Click="AddEvent_Click" Background="#99E8FF" />
                 </DockPanel>
             </Grid>
 
-            <Grid Grid.RowSpan="1" Grid.Row="1" Grid.Column="0">
+            <Grid Grid.RowSpan="1" Grid.Row="1" Grid.Column="0" Background="#FFE7F0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
