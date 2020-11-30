@@ -44,9 +44,9 @@
             <Grid Grid.Row="0" Grid.Column="1">
                 <DockPanel>
                     <Button Content="Add Event" Width="200" Height="100"
-                        HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="30" 
+                        HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="36" 
                         Click="AddEvent_Click" Background="#8CE6FF"
-                        FontFamily="Resources/PetitFormalScript-Regular.ttf #Petit Formal Script, Segoe Script"/>
+                        FontFamily="Trebuchet MS"/>
                 </DockPanel>
             </Grid>
 
