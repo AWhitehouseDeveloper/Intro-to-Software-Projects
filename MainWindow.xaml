@@ -37,12 +37,12 @@
                         HorizontalAlignment="Center" FontSize="20"
                         FontWeight="ExtraBlack" Click="NextMonth_Click"
                         Background="#E4FFFF" BorderBrush="#008CFF"/>
-                    <!--Add event button-->
                 </DockPanel>
             </Grid>
 
             <Grid Grid.Row="0" Grid.Column="1">
                 <DockPanel>
+                    <!--Add event button-->
                     <Button Content="Add Event" Width="200" Height="100"
                         HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="36" 
                         Click="AddEvent_Click" Background="#8CE6FF"
@@ -71,6 +71,7 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
+                <!--days of the week text-->
                 <TextBlock Text="Sunday" FontFamily="Trebuchet MS" FontSize="16"
                            TextAlignment="Center" VerticalAlignment="Center"/>
                 <TextBlock Text="Monday" FontFamily="Trebuchet MS" FontSize="16"
