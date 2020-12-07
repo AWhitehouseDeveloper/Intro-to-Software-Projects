@@ -249,11 +249,6 @@
                            HorizontalAlignment="Right" Width="25" Height="25" 
                            TextAlignment="Right" VerticalAlignment="Top"
                            Grid.Column="6" Grid.Row="5" />
-                <Grid>
-                    <!--This is where the days will go-->
-
-                </Grid>
-
             </Grid>
 
 
