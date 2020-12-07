@@ -45,8 +45,6 @@ namespace Planner
             string s = t.Assembly.FullName.ToString();
             Console.WriteLine("The fully qualified assembly name " +
                 "containing the specified class is {0}.", s);
-
-
         }
 
 
@@ -86,7 +84,7 @@ namespace Planner
 
             public string ToString()
             {
-                return $"Name: {Name} Start:{StartOfEvent} End:{EndOfEvent} Desc:{ Description } Color: {Color}";
+                return $"Name: {Name} \nStart:{StartOfEvent} \nEnd:{EndOfEvent} \nDesc:{ Description } \nColor: {Color}";
             }
 
         }
