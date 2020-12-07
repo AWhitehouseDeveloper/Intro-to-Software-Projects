@@ -98,6 +98,157 @@
                 <TextBlock Text="Saturday" FontFamily="Trebuchet MS" FontSize="16"
                            TextAlignment="Center" VerticalAlignment="Center" 
                            Grid.Column="6"/>
+                
+                <!--days getting textblocks-->
+                <!--week 1-->
+                <TextBlock Name="sun1" FontFamily="Trebuchet MS" FontSize="16" 
+                           TextAlignment="Right" VerticalAlignment="Top"
+                           HorizontalAlignment="Right" Width="25" Height="25"
+                           Grid.Column="0" Grid.Row="1"/>
+                <TextBlock Name="mon1" FontFamily="Trebuchet MS" FontSize="16"
+                           HorizontalAlignment="Right" Width="25" Height="25" 
+                           TextAlignment="Right" VerticalAlignment="Top"
+                           Grid.Column="1" Grid.Row="1" />
+                <TextBlock Name="tue1" FontFamily="Trebuchet MS" FontSize="16"
+                           HorizontalAlignment="Right" Width="25" Height="25" 
+                           TextAlignment="Right" VerticalAlignment="Top"
+                           Grid.Column="2" Grid.Row="1" />
+                <TextBlock Name="wed1" FontFamily="Trebuchet MS" FontSize="16"
+                           HorizontalAlignment="Right" Width="25" Height="25" 
+                           TextAlignment="Right" VerticalAlignment="Top"
+                           Grid.Column="3" Grid.Row="1" />
+                <TextBlock Name="thur1" FontFamily="Trebuchet MS" FontSize="16"
+                           HorizontalAlignment="Right" Width="25" Height="25" 
+                           TextAlignment="Right" VerticalAlignment="Top"
+                           Grid.Column="4" Grid.Row="1" />
+                <TextBlock Name="fri1" FontFamily="Trebuchet MS" FontSize="16"
+                           HorizontalAlignment="Right" Width="25" Height="25" 
+                           TextAlignment="Right" VerticalAlignment="Top"
+                           Grid.Column="5" Grid.Row="1" />
+                <TextBlock Name="sat1" FontFamily="Trebuchet MS" FontSize="16"
+                           HorizontalAlignment="Right" Width="25" Height="25" 
+                           TextAlignment="Right" VerticalAlignment="Top"
+                           Grid.Column="6" Grid.Row="1" />
+                
+                <!--week 2-->
+                <TextBlock Name="sun2" FontFamily="Trebuchet MS" FontSize="16"
+                           HorizontalAlignment="Right" Width="25" Height="25" 
+                           TextAlignment="Right" VerticalAlignment="Top"
+                           Grid.Column="0" Grid.Row="2" />
+                <TextBlock Name="mon2" FontFamily="Trebuchet MS" FontSize="16"
+                           HorizontalAlignment="Right" Width="25" Height="25" 
+                           TextAlignment="Right" VerticalAlignment="Top"
+                           Grid.Column="1" Grid.Row="2" />
+                <TextBlock Name="tue2" FontFamily="Trebuchet MS" FontSize="16"
+                           HorizontalAlignment="Right" Width="25" Height="25" 
+                           TextAlignment="Right" VerticalAlignment="Top"
+                           Grid.Column="2" Grid.Row="2" />
+                <TextBlock Name="wed2" FontFamily="Trebuchet MS" FontSize="16"
+                           HorizontalAlignment="Right" Width="25" Height="25" 
+                           TextAlignment="Right" VerticalAlignment="Top"
+                           Grid.Column="3" Grid.Row="2" />
+                <TextBlock Name="thur2" FontFamily="Trebuchet MS" FontSize="16"
+                           HorizontalAlignment="Right" Width="25" Height="25" 
+                           TextAlignment="Right" VerticalAlignment="Top"
+                           Grid.Column="4" Grid.Row="2" />
+                <TextBlock Name="fri2" FontFamily="Trebuchet MS" FontSize="16"
+                           HorizontalAlignment="Right" Width="25" Height="25" 
+                           TextAlignment="Right" VerticalAlignment="Top"
+                           Grid.Column="5" Grid.Row="2" />
+                <TextBlock Name="sat2" FontFamily="Trebuchet MS" FontSize="16"
+                           HorizontalAlignment="Right" Width="25" Height="25" 
+                           TextAlignment="Right" VerticalAlignment="Top"
+                           Grid.Column="6" Grid.Row="2" />
+
+                <!--week 3-->
+                <TextBlock Name="sun3" FontFamily="Trebuchet MS" FontSize="16"
+                           HorizontalAlignment="Right" Width="25" Height="25" 
+                           TextAlignment="Right" VerticalAlignment="Top"
+                           Grid.Column="0" Grid.Row="3" />
+                <TextBlock Name="mon3" FontFamily="Trebuchet MS" FontSize="16"
+                           HorizontalAlignment="Right" Width="25" Height="25" 
+                           TextAlignment="Right" VerticalAlignment="Top"
+                           Grid.Column="1" Grid.Row="3" />
+                <TextBlock Name="tue3" FontFamily="Trebuchet MS" FontSize="16"
+                           HorizontalAlignment="Right" Width="25" Height="25" 
+                           TextAlignment="Right" VerticalAlignment="Top"
+                           Grid.Column="2" Grid.Row="3" />
+                <TextBlock Name="wed3" FontFamily="Trebuchet MS" FontSize="16"
+                           HorizontalAlignment="Right" Width="25" Height="25" 
+                           TextAlignment="Right" VerticalAlignment="Top"
+                           Grid.Column="3" Grid.Row="3" />
+                <TextBlock Name="thur3" FontFamily="Trebuchet MS" FontSize="16"
+                           HorizontalAlignment="Right" Width="25" Height="25" 
+                           TextAlignment="Right" VerticalAlignment="Top"
+                           Grid.Column="4" Grid.Row="3" />
+                <TextBlock Name="fri3" FontFamily="Trebuchet MS" FontSize="16"
+                           HorizontalAlignment="Right" Width="25" Height="25" 
+                           TextAlignment="Right" VerticalAlignment="Top"
+                           Grid.Column="5" Grid.Row="3" />
+                <TextBlock Name="sat3" FontFamily="Trebuchet MS" FontSize="16"
+                           HorizontalAlignment="Right" Width="25" Height="25" 
+                           TextAlignment="Right" VerticalAlignment="Top"
+                           Grid.Column="6" Grid.Row="3" />
+
+                <!--week 4-->
+                <TextBlock Name="sun4" FontFamily="Trebuchet MS" FontSize="16"
+                           HorizontalAlignment="Right" Width="25" Height="25" 
+                           TextAlignment="Right" VerticalAlignment="Top"
+                           Grid.Column="0" Grid.Row="4" />
+                <TextBlock Name="mon4" FontFamily="Trebuchet MS" FontSize="16"
+                           HorizontalAlignment="Right" Width="25" Height="25" 
+                           TextAlignment="Right" VerticalAlignment="Top"
+                           Grid.Column="1" Grid.Row="4" />
+                <TextBlock Name="tue4" FontFamily="Trebuchet MS" FontSize="16"
+                           HorizontalAlignment="Right" Width="25" Height="25" 
+                           TextAlignment="Right" VerticalAlignment="Top"
+                           Grid.Column="2" Grid.Row="4" />
+                <TextBlock Name="wed4" FontFamily="Trebuchet MS" FontSize="16"
+                           HorizontalAlignment="Right" Width="25" Height="25" 
+                           TextAlignment="Right" VerticalAlignment="Top"
+                           Grid.Column="3" Grid.Row="4" />
+                <TextBlock Name="thur4" FontFamily="Trebuchet MS" FontSize="16"
+                           HorizontalAlignment="Right" Width="25" Height="25" 
+                           TextAlignment="Right" VerticalAlignment="Top"
+                           Grid.Column="4" Grid.Row="4" />
+                <TextBlock Name="fri4" FontFamily="Trebuchet MS" FontSize="16"
+                           HorizontalAlignment="Right" Width="25" Height="25" 
+                           TextAlignment="Right" VerticalAlignment="Top"
+                           Grid.Column="5" Grid.Row="4" />
+                <TextBlock Name="sat4" FontFamily="Trebuchet MS" FontSize="16"
+                           HorizontalAlignment="Right" Width="25" Height="25" 
+                           TextAlignment="Right" VerticalAlignment="Top"
+                           Grid.Column="6" Grid.Row="4" />
+
+                <!--week 5-->
+                <TextBlock Name="sun5" FontFamily="Trebuchet MS" FontSize="16"
+                           HorizontalAlignment="Right" Width="25" Height="25" 
+                           TextAlignment="Right" VerticalAlignment="Top"
+                           Grid.Column="0" Grid.Row="5" />
+                <TextBlock Name="mon5" FontFamily="Trebuchet MS" FontSize="16"
+                           HorizontalAlignment="Right" Width="25" Height="25" 
+                           TextAlignment="Right" VerticalAlignment="Top"
+                           Grid.Column="1" Grid.Row="5" />
+                <TextBlock Name="tue5" FontFamily="Trebuchet MS" FontSize="16"
+                           HorizontalAlignment="Right" Width="25" Height="25" 
+                           TextAlignment="Right" VerticalAlignment="Top"
+                           Grid.Column="2" Grid.Row="5" />
+                <TextBlock Name="wed5" FontFamily="Trebuchet MS" FontSize="16"
+                           HorizontalAlignment="Right" Width="25" Height="25" 
+                           TextAlignment="Right" VerticalAlignment="Top"
+                           Grid.Column="3" Grid.Row="5" />
+                <TextBlock Name="thur5" FontFamily="Trebuchet MS" FontSize="16"
+                           HorizontalAlignment="Right" Width="25" Height="25" 
+                           TextAlignment="Right" VerticalAlignment="Top"
+                           Grid.Column="4" Grid.Row="5" />
+                <TextBlock Name="fri5" FontFamily="Trebuchet MS" FontSize="16"
+                           HorizontalAlignment="Right" Width="25" Height="25" 
+                           TextAlignment="Right" VerticalAlignment="Top"
+                           Grid.Column="5" Grid.Row="5" />
+                <TextBlock Name="sat5" FontFamily="Trebuchet MS" FontSize="16"
+                           HorizontalAlignment="Right" Width="25" Height="25" 
+                           TextAlignment="Right" VerticalAlignment="Top"
+                           Grid.Column="6" Grid.Row="5" />
                 <Grid>
                     <!--This is where the days will go-->
 
