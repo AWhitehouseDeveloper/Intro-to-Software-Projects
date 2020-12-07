@@ -41,12 +41,13 @@
             </Grid>
 
             <Grid Grid.Row="0" Grid.Column="1">
-                <DockPanel>
+                <DockPanel Height="585">
                     <!--Add event button-->
                     <Button Content="Add Event" Width="200" Height="100"
                         HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="36" 
                         Click="AddEvent_Click" Background="#8CE6FF"
                         FontFamily="Trebuchet MS"/>
+                    <TextBlock Text="Event here!" FontSize="30"/>
                 </DockPanel>
             </Grid>
 

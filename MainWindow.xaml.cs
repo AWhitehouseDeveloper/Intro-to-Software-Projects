@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Reflection;
+using System.Globalization;
 
 namespace Planner
 {
@@ -41,11 +42,23 @@ namespace Planner
         public MainWindow()
         {
             InitializeComponent();
+
             Type t = typeof(System.Data.DataSet);
             string s = t.Assembly.FullName.ToString();
             Console.WriteLine("The fully qualified assembly name " +
                 "containing the specified class is {0}.", s);
 
+            //scheduling
+
+            DateTime current = DateTime.Now;
+            DateTime update = new DateTime(current.Year, current.Month, 1);
+            var calendar = DateTimeFormatInfo.CurrentInfo.Calendar;
+            var week = calendar.GetWeekOfYear(new DateTime(update.Year, update.Month, 1), CalendarWeekRule.FirstDay, DayOfWeek.Sunday);
+
+            for(var i = 1; update.Month == current.Month; update = update.AddDays(1))
+            {
+                var weekOfMonth = (update.Day / 7) + 1;
+            }
 
         }
 
