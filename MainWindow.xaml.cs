@@ -21,7 +21,7 @@ namespace Planner
     /// </summary>
     public partial class MainWindow : Window
     {
-        static int index = 9;
+        static int index = 0;
         static Month January = new Month("January");
         static Month Febuary = new Month("Febuary");
         static Month March = new Month("March");
@@ -34,9 +34,11 @@ namespace Planner
         static Month October = new Month("October");
         static Month November = new Month("November");
         static Month December = new Month("December");
-        static Month[] months = { January, Febuary, March, April, May, June, July, August, September, October, November, December };
+        static readonly Month[] months = { January, Febuary, March, April, May, June, July, August, September, October, November, December };
 
         static Month CurrentMonth = months[index];
+        public Event[] events = new Event[25];
+
 
         public MainWindow()
         {
@@ -46,7 +48,9 @@ namespace Planner
             Console.WriteLine("The fully qualified assembly name " +
                 "containing the specified class is {0}.", s);
 
-
+            index = DateTime.Now.Month;
+            YearDisplay.Text = DateTime.Now.Year.ToString();
+            
         }
 
 
@@ -56,20 +60,6 @@ namespace Planner
             public Month(string name) { Name = name; }
 
             public string Name { get; set; }
-            public Event[] events = new Event[25];
-
-            public string ToString()
-            {
-                string fullMonth = Name + "  ";
-                for(int i = 0; i < events.Length;i++ )
-                {
-                    if (events[i] != null)
-                    {
-                        fullMonth += events[i].ToString();
-                    }
-                }
-                return fullMonth;
-            }
 
         }
 
@@ -95,6 +85,9 @@ namespace Planner
         {
             CurrentMonth = months[index];
             MonthDisplay.Text = CurrentMonth.Name;
+
+            DateTime date = DateTime.Parse(YearDisplay.Text.ToString() + "," + MonthDisplay.Text.ToString() + ",1");
+            string day = date.DayOfWeek.ToString();
         }
         
         private void prevMonth_Click(object sender, RoutedEventArgs e)
@@ -103,17 +96,21 @@ namespace Planner
             if (index < 0)
             {
                 index = months.Length - 1;
+                int year = int.Parse(YearDisplay.Text.ToString()) - 1;
+                YearDisplay.Text = year.ToString();
             }
 
             displayMonth();
         }
-
+        
         private void NextMonth_Click(object sender, RoutedEventArgs e)
         {
             index++;
             if (index + 1 > months.Length)
             {
                 index = 0;
+                int year = int.Parse(YearDisplay.Text.ToString()) + 1;
+                YearDisplay.Text = year.ToString();
             }
 
             displayMonth();
@@ -121,15 +118,15 @@ namespace Planner
 
         private void AddEvent_Click(object sender, RoutedEventArgs e)
         {
-            for (int i = 0; i < CurrentMonth.events.Length; i++)
+            for (int i = 0; i < events.Length; i++)
             {
-                if (CurrentMonth.events[i] == null)
+                if (events[i] == null)
                 {
-                    CurrentMonth.events[i] = (new Event("TestEvent", DateTime.Today, DateTime.Now, "Just testing the button click", Color.FromRgb(10, 40, 200)));
+                    events[i] = (new Event("TestEvent", DateTime.Today, DateTime.Now, "Just testing the button click", Color.FromRgb(10, 40, 200)));
                     break;
                 }
             }
-            Console.WriteLine(CurrentMonth.ToString());
+            Console.WriteLine(events.ToString());
         }
     }
 }
