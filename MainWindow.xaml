@@ -9,7 +9,7 @@
 
     <StackPanel>
         <Grid Background="#E4FFFF">
-            <!--Setting up the grid to help with the calendar-->
+            <!--grid to seperate the titles and the calendar/events-->
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="600"/>
                 <ColumnDefinition Width="200"/>
@@ -55,6 +55,7 @@
                 </DockPanel>
             </Grid>
 
+            <!-- grid for the days-->
             <Grid x:Name="grdDays" Grid.RowSpan="1" Grid.Row="1" Grid.Column="0" 
                   Background="#FFE7F0">
 
