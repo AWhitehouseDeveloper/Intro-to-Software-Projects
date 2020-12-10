@@ -67,6 +67,7 @@
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
@@ -250,6 +251,36 @@
                            HorizontalAlignment="Right" Width="25" Height="25" 
                            TextAlignment="Right" VerticalAlignment="Top"
                            Grid.Column="6" Grid.Row="5" />
+
+                <!--week 6-->
+                <TextBlock Name="sun6" FontFamily="Trebuchet MS" FontSize="16"
+                           HorizontalAlignment="Right" Width="25" Height="25" 
+                           TextAlignment="Right" VerticalAlignment="Top"
+                           Grid.Column="0" Grid.Row="6" />
+                <TextBlock Name="mon6" FontFamily="Trebuchet MS" FontSize="16"
+                           HorizontalAlignment="Right" Width="25" Height="25" 
+                           TextAlignment="Right" VerticalAlignment="Top"
+                           Grid.Column="1" Grid.Row="6" />
+                <TextBlock Name="tue6" FontFamily="Trebuchet MS" FontSize="16"
+                           HorizontalAlignment="Right" Width="25" Height="25" 
+                           TextAlignment="Right" VerticalAlignment="Top"
+                           Grid.Column="2" Grid.Row="6" />
+                <TextBlock Name="wed6" FontFamily="Trebuchet MS" FontSize="16"
+                           HorizontalAlignment="Right" Width="25" Height="25" 
+                           TextAlignment="Right" VerticalAlignment="Top"
+                           Grid.Column="3" Grid.Row="6" />
+                <TextBlock Name="thur6" FontFamily="Trebuchet MS" FontSize="16"
+                           HorizontalAlignment="Right" Width="25" Height="25" 
+                           TextAlignment="Right" VerticalAlignment="Top"
+                           Grid.Column="4" Grid.Row="6" />
+                <TextBlock Name="fri6" FontFamily="Trebuchet MS" FontSize="16"
+                           HorizontalAlignment="Right" Width="25" Height="25" 
+                           TextAlignment="Right" VerticalAlignment="Top"
+                           Grid.Column="5" Grid.Row="6" />
+                <TextBlock Name="sat6" FontFamily="Trebuchet MS" FontSize="16"
+                           HorizontalAlignment="Right" Width="25" Height="25" 
+                           TextAlignment="Right" VerticalAlignment="Top"
+                           Grid.Column="6" Grid.Row="6" />
             </Grid>
 
 
