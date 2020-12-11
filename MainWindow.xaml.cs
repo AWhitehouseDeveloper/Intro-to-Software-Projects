@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Reflection;
+using System.Globalization;
 
 namespace Planner
 {
@@ -43,6 +44,7 @@ namespace Planner
         public MainWindow()
         {
             InitializeComponent();
+
             Type t = typeof(System.Data.DataSet);
             string s = t.Assembly.FullName.ToString();
             Console.WriteLine("The fully qualified assembly name " +
@@ -76,7 +78,7 @@ namespace Planner
 
             public string ToString()
             {
-                return $"Name: {Name} Start:{StartOfEvent} End:{EndOfEvent} Desc:{ Description } Color: {Color}";
+                return $"Name: {Name} \nStart:{StartOfEvent} \nEnd:{EndOfEvent} \nDesc:{ Description } \nColor: {Color}";
             }
 
         }
