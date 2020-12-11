@@ -37,6 +37,8 @@ namespace Planner
         static Month December = new Month("December");
         static readonly Month[] months = { January, Febuary, March, April, May, June, July, August, September, October, November, December };
 
+        static TextBlock[] dayBlocks = new TextBlock[45];
+
         static Month CurrentMonth = months[index];
         public Event[] events = new Event[25];
 
@@ -50,9 +52,18 @@ namespace Planner
             Console.WriteLine("The fully qualified assembly name " +
                 "containing the specified class is {0}.", s);
 
-            index = DateTime.Now.Month;
+            //full weeks per line else it gets really long and looks bad
+            dayBlocks[1] = sun1; dayBlocks[2] = mon1; dayBlocks[3] = tue1; dayBlocks[4] = wed1; dayBlocks[5] = thur1; dayBlocks[6] = fri1; dayBlocks[7] = sat1;
+            dayBlocks[8] = sun2; dayBlocks[9] = mon2; dayBlocks[10] = tue2; dayBlocks[11] = wed2; dayBlocks[12] = thur2; dayBlocks[13] = fri2; dayBlocks[14] = sat2;
+            dayBlocks[15] = sun3; dayBlocks[16] = mon3; dayBlocks[17] = tue3; dayBlocks[18] = wed3; dayBlocks[19] = thur3; dayBlocks[20] = fri3; dayBlocks[21] = sat3;
+            dayBlocks[22] = sun4; dayBlocks[23] = mon4; dayBlocks[24] = tue4; dayBlocks[25] = wed4; dayBlocks[26] = thur4; dayBlocks[27] = fri4; dayBlocks[28] = sat4;
+            dayBlocks[29] = sun5; dayBlocks[30] = mon5; dayBlocks[31] = tue5; dayBlocks[32] = wed5; dayBlocks[33] = thur5; dayBlocks[34] = fri5; dayBlocks[35] = sat5;
+            //dayBlocks[36] = sun6; dayBlocks[37] = mon6; dayBlocks[38] = tue6; dayBlocks[39] = wed6; dayBlocks[40] = thur6; dayBlocks[41] = fri6; dayBlocks[42] = sat6;
+
+            index = DateTime.Now.Month -1;
             YearDisplay.Text = DateTime.Now.Year.ToString();
-            
+            displayMonth();
+
         }
 
 
@@ -76,7 +87,7 @@ namespace Planner
             public string Description { get; set; }
             public Color Color { get; set; }
 
-            public string ToString()
+            public string ToString()  
             {
                 return $"Name: {Name} \nStart:{StartOfEvent} \nEnd:{EndOfEvent} \nDesc:{ Description } \nColor: {Color}";
             }
@@ -90,6 +101,53 @@ namespace Planner
 
             DateTime date = DateTime.Parse(YearDisplay.Text.ToString() + "," + MonthDisplay.Text.ToString() + ",1");
             string day = date.DayOfWeek.ToString();
+            int start = 0;
+
+            if (day.ToLower().Equals("sunday"))
+            {
+                sun1.Text = "1";
+            }
+            else if (day.ToLower().Equals("monday"))
+            {
+                mon1.Text = "1";
+                start = 1;
+            }
+            else if(day.ToLower().Equals("tuesday"))
+            {
+                tue1.Text = "1";
+                start = 2;
+            }
+            else if (day.ToLower().Equals("wednesday"))
+            {
+                wed1.Text = "1";
+                start = 3;
+            }
+            else if (day.ToLower().Equals("thursday"))
+            {
+                thur1.Text = "1";
+                start = 4;
+            }
+            else if (day.ToLower().Equals("friday"))
+            {
+                fri1.Text = "1";
+                start = 5;
+            }
+            else if (day.ToLower().Equals("saturday"))
+            {
+                sat1.Text = "1";
+                start = 6;
+            }
+
+            int days = DateTime.DaysInMonth(date.Year, date.Month);
+
+            for (int i = start + 1; i <= days + start - 7; i++)
+            {
+                string prevday = dayBlocks[i - 1].Text;
+                int dayCount;
+                int.TryParse(prevday, out dayCount);
+                dayCount++;
+                dayBlocks[i].Text = "" + dayCount;
+            }
         }
         
         private void prevMonth_Click(object sender, RoutedEventArgs e)
